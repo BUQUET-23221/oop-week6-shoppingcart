@@ -51,14 +51,21 @@ namespace shoppingCart2
 
         public void Promo(merchandises name)
         {
+            int compt = 0;
             for(int i=0;i<ListCourses.Count;i++)
             {
-                if(ListCourses[i].name=="apple")
+                
+                if(compt==0 && ListCourses[i].name=="apple")
                 {
                     merchandises apple = new merchandises("apple", 0.60);
                     ListCourses.Add(apple);
-                    break;
+                    compt++;
                 }
+                else
+                {
+                    compt = 0;
+                }
+
             }
         }
     }
