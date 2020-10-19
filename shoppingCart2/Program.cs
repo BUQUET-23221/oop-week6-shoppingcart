@@ -11,7 +11,7 @@ namespace shoppingCart2
         static void Main(string[] args)
         {
             //orange = 60;
-            //apple = 40;
+            //apple = 25;
             merchandises apple = new merchandises("apple", 60);
             merchandises orange = new merchandises("orange", 25);
 
