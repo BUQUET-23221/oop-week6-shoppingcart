@@ -9,13 +9,16 @@ namespace shoppingCart2
     class merchandises
     {
         public string name { get; set; }
-        public int price { get; set; }
+        public double price { get; set; }
 
-        public merchandises(string _name, int _price)
+
+        public merchandises(string _name, double _price)
         {
             name = _name;
             price = _price;
 
         }
+
+    
     }
 }
