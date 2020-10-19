@@ -49,7 +49,7 @@ namespace shoppingCart2
 
         }
 
-        public void PromoApple(merchandises name)
+        public void Promo(merchandises name)
         {
             for(int i=0;i<ListCourses.Count;i++)
             {
