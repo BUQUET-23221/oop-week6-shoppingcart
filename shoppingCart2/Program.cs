@@ -29,6 +29,7 @@ namespace shoppingCart2
             }
             Console.WriteLine($"You need to pay £{Sum(fruits)}");
             Console.ReadKey();
+            Console.WriteLine("test");
         }
 
         static int Sum(List<merchandises> fruits)
