@@ -12,34 +12,37 @@ namespace shoppingCart2
         {
             //orange = 60;
             //apple = 40;
+            merchandises apple = new merchandises("apple", 60);
+            merchandises orange = new merchandises("orange", 25);
 
-            List<string> fruits = new List<string>();
-            fruits.Add("Orange");
-            fruits.Add("Orange");
-            fruits.Add("Apple");
-            fruits.Add("Orange");
+
+            List<merchandises> fruits = new List<merchandises>();
+            fruits.Add(orange);
+            fruits.Add(apple);
+            fruits.Add(apple);
+            fruits.Add(apple);
 
             Console.WriteLine("Shopping List:");
             for(int i=0;i<fruits.Count;i++)
             {
-                Console.WriteLine(fruits[i]);
+                Console.WriteLine(fruits[i].name);
             }
             Console.WriteLine($"You need to pay £{Sum(fruits)}");
             Console.ReadKey();
         }
 
-        static int Sum(List<string> fruits)
+        static int Sum(List<merchandises> fruits)
         {
             int sum = 0;
             for(int i=0;i<fruits.Count;i++)
             {
-                if(fruits[i]=="Orange")
+                if(fruits[i].name=="apple")
                 {
                     sum = sum + 60;
                 }
                 else
                 {
-                    sum = sum + 40;
+                    sum = sum + 25;
                 }
             }
             return sum/100;
