@@ -29,6 +29,8 @@ namespace shoppingCart2
             Console.WriteLine(ListCourses.ToString());
             Console.WriteLine($"You need to pay £{ListCourses.Sum()}");
             Console.ReadKey();
+
+            Console.WriteLine("test");
         }
 
         
