@@ -1,0 +1,12 @@
+Niveau accessibilité
+string:login;string:password;string:accessLevel
+
+eleve
+string:nom;string:prenom;string:email;string:StudentID;string:dateNaissance(ex:06/10/2000);int:absences;string:phoneNumber;bool:tutor;string:niveau;string:classe;Unpaidfees:double;matiere,note,coeff
+
+prof
+string:nom;string:prenom;string:email;string:phoneNumber;enum:SaMatiere(ex:0,1);niveau et classe(1,1,2;2,1)
+
+admin
+string:nom;string:prenom;string:email;string:phoneNumber
+
